@@ -12,7 +12,7 @@ import javax.persistence.Id;
 @EqualsAndHashCode
 @Builder
 @Entity
-public class JornadadeTrabalho {
+public class JornadaTrabalho {
     @Id
     private long id;
     private String descrição;

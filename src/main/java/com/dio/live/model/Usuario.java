@@ -6,7 +6,6 @@ import lombok.*;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
@@ -30,7 +29,7 @@ public class Usuario {
     @ManyToOne
     private NivelAcesso nivelAcesso;
     @ManyToOne
-    private JornadadeTrabalho jornadadeTrabalho;
+    private JornadaTrabalho jornadaTrabalho;
     private BigDecimal tolerancia;
     private LocalDate inicioJornada;
     private LocalDate finalJornada;
