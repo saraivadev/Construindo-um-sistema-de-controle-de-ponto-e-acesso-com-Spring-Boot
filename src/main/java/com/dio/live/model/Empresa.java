@@ -2,6 +2,7 @@ package com.dio.live.model;
 
 
 import lombok.*;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -13,10 +14,11 @@ import javax.persistence.Id;
 @EqualsAndHashCode
 @Builder
 @Entity
+@Audited
 public class Empresa {
     @Id
     private long id;
-    private String descrição;
+    private String descricao;
     private String cnpj;
     private  String endereco;
     private  String bairro;
